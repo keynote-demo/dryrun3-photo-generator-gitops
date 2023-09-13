@@ -1,0 +1,15 @@
+app:
+  name: dryrun3-photo-generator-app
+  namespace: dryrun3
+  cluster: .apps.keynote.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/keynote-demo/dryrun3-photo-generator
+  org: keynote-demo
+  name: dryrun3-photo-generator
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: dryrun3/photo-generator-app
+  tag: latest
